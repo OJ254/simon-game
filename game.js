@@ -4,8 +4,8 @@ var buttonColours = ["red", "blue", "green", "yellow"];
 var level = 0;
 var started = false; // Track if the game has started
 
-// Detect first keypress to start the game
-$(document).keypress(function () {
+// Detect first keydown to start the game
+$(document).keydown(function () {
     if (!started) {
         $("#level-title").text("Level " + level); // Update title
         nextSequence(); // Start the game
